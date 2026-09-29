@@ -10,7 +10,7 @@ Este proyecto fue realizado en equipo con la colaboración de:
 - Ángela Kangqi Gutiérrez Ruiz
 - Álvaro Velázquez Pérez
 - Laura García Monclu
-- Antonio
-- Israel
+- Jorge Antonio Juarez Levya 
+- Israel Cortes
 
 El código se publica únicamente con fines académicos y de portfolio profesional.
