@@ -1,0 +1,17 @@
+/*
+    - Autor: Samuel José Gomes Olivares
+    - Trabajo de Fin de Grado: Los Espacios de Minkowski y su aplicación en la relatividad especial: una perspectiva matemática y computacional
+    - Fecha de última modificación: 30 de mayo 2026
+
+    Nota de uso::
+    Este código puede ser utilizado como referencia siempre y cuando se cite correctamente al autor.
+
+    Descripción:
+    En este fichero se guarda toda la estética que llevará la aplicación web.
+*/
+
+body {
+    font-family: Arial;     /* Fuente de texto */
+    text-align: center;     /* Alineación centrada */
+    margin-top: 20px;       /* Margen superior */
+}
