@@ -1,3 +1,3 @@
 # Visualizador de espacios de Minkowski
  
-Trabajo Fin de Grado de Samuel José Gomes Olivares.
+Código utilizado para la aplicación complementario del Trabajo de Fin de Grado del autor de este repositorio.
