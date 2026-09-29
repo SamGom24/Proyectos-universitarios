@@ -1,0 +1,55 @@
+/* Contenedor principal de la lista de categorías */
+.lista-categorias {
+  display: grid;                                      /* Distribución en cuadrícula */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /* Crea columnas flexibles que se adaptan al espacio disponible */
+  gap: 20px;                                          /* Separación entre tarjetas */
+  padding: 20px;                                      /* Espaciado interno */
+}
+
+/* Tarjeta individual de cada categoría */
+.categoria-card {
+  background: #fff;                                   /* Fondo blanco tipo tarjeta */
+  padding: 20px;                                      /* Espaciado interno */
+  border-radius: 12px;                                /* Esquinas redondeadas */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);             /* Sombra suave */
+}
+
+/* Título de la tarjeta */
+.categoria-card h3 {
+  margin-top: 0;                                      /* Elimina margen superior */
+}
+
+/* Botón para modificar una categoría */
+.modificar-btn {
+  margin-top: 10px;                                   /* Separación respecto al contenido */
+  padding: 10px;                                      /* Espaciado interno */
+  background: #2196f3;                                /* Azul de acción */
+  color: white;                                       /* Texto blanco */
+  border: none;                                       /* Sin borde */
+  border-radius: 8px;                                 /* Esquinas redondeadas */
+  cursor: pointer;                                    /* Cursor de mano */
+  font-size: 15px;                                    /* Tamaño del texto */
+}
+
+/* Hover del botón modificar */
+.modificar-btn:hover {
+  background: #1976d2;                                /* Azul más oscuro al pasar el ratón */
+}
+
+/* Botón para borrar una categoría */
+.borrar-btn {
+  margin-top: 10px;                                   /* Separación respecto al contenido */
+  padding: 10px;                                      /* Espaciado interno */
+  background: #e53935;                                /* Rojo de acción destructiva */
+  color: white;                                       /* Texto blanco */
+  border: none;                                       /* Sin borde */
+  border-radius: 8px;                                 /* Esquinas redondeadas */
+  cursor: pointer;                                    /* Cursor de mano */
+}
+
+/* Hover del botón borrar */
+.borrar-btn:hover {
+  background: #c62828;                                /* Rojo más oscuro al pasar el ratón */
+}
+

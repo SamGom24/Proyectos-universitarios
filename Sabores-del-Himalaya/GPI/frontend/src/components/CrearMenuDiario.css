@@ -1,0 +1,82 @@
+/* Contenedor principal del formulario del menú diario */
+.menu-form {
+  background: #ffffff;                 /* Fondo blanco tipo tarjeta */
+  padding: 25px;                       /* Espaciado interno amplio */
+  border-radius: 12px;                 /* Esquinas redondeadas */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Sombra suave para efecto de elevación */
+  width: 90%;                          /* Ocupa casi todo el ancho disponible */
+  max-width: 600px;                    /* Límite máximo para evitar que se haga demasiado grande */
+  margin: 20px auto;                   /* Centrado horizontal + margen vertical */
+}
+
+/* Título principal del formulario */
+.menu-form h2 {
+  text-align: center;                  /* Centra el texto */
+  margin-bottom: 20px;                 /* Espacio inferior */
+  color: #0b0b0b;                      /* Color del texto */
+}
+
+/* Subtítulos de secciones dentro del formulario */
+.menu-form h3 {
+  margin-top: 25px;                    /* Separación superior */
+  margin-bottom: 10px;                 /* Separación inferior */
+  color: #0b0b0b;                      /* Color del texto */
+}
+
+/* Contenedor de cada campo selector (label + select/input) */
+.campo-selector {
+  display: flex;                       /* Activa flexbox */
+  flex-direction: column;              /* Coloca label y select en columna */
+  margin-bottom: 15px;                 /* Espacio inferior entre campos */
+}
+
+/* Estilo de las etiquetas de los campos */
+.campo-selector label {
+  font-weight: bold;                   /* Negrita para destacar */
+  margin-bottom: 5px;                  /* Separación respecto al input */
+}
+
+/* Estilo común para select, input date y input number */
+.campo-selector select,
+.menu-form input[type="date"],
+.menu-form input[type="number"] {
+  padding: 10px;                       /* Espaciado interno */
+  border-radius: 8px;                  /* Esquinas redondeadas */
+  border: 1px solid #ccc;              /* Borde gris claro */
+  font-size: 15px;                     /* Tamaño de texto legible */
+}
+
+/* Botón de guardar */
+.guardar-btn {
+  width: 100%;                         /* Ocupa todo el ancho del formulario */
+  padding: 12px;                       /* Espaciado interno */
+  background: #4caf50;                 /* Verde de acción positiva */
+  color: white;                        /* Texto blanco */
+  border: none;                        /* Sin borde */
+  border-radius: 8px;                  /* Esquinas redondeadas */
+  font-size: 16px;                     /* Tamaño del texto */
+  cursor: pointer;                     /* Cursor de mano */
+  margin-top: 20px;                    /* Separación respecto al contenido anterior */
+}
+
+/* Efecto hover del botón */
+.guardar-btn:hover {
+  background: #43a047;                 /* Verde ligeramente más oscuro al pasar el ratón */
+}
+
+/* Botón de consultar */
+.consultar-btn {
+  width: 100%;
+  padding: 12px;
+  background: #2196f3;        /* Azul elegante */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.consultar-btn:hover {
+  background: #1e88e5;        /* Azul más oscuro al pasar el ratón */
+}

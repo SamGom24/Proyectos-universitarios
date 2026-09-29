@@ -1,0 +1,118 @@
+/* Tarjeta principal usada como botón en el panel de administración */
+.tarjeta-boton {
+  background: #ffffff;                     /* Fondo blanco tipo tarjeta */
+  padding: 20px;                           /* Espaciado interno */
+  border-radius: 12px;                     /* Esquinas redondeadas */
+  font-size: 30px;                         /* Tamaño del texto */
+  font-weight: bold;                       /* Texto destacado */
+  cursor: pointer;                         /* Cursor de mano */
+  border: 2px solid #ccc;                  /* Borde gris claro */
+  transition: 0.2s ease;                   /* Animación suave */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);  /* Sombra suave */
+
+  /* Diseño compacto tipo tarjeta */
+  width: 140px;                            /* Tamaño fijo */
+  height: 140px;                           /* Cuadrado */
+  display: flex;
+  flex-direction: column;                  /* Icono arriba, texto abajo */
+  align-items: center;
+  justify-content: center;
+  gap: 10px;                               /* Separación entre icono y texto */
+}
+
+/* Efecto hover de la tarjeta */
+.tarjeta-boton:hover {
+  background: #f5f5f5;                     /* Fondo gris claro */
+  transform: scale(1.05);                  /* Ligero zoom */
+}
+
+/* El texto dentro de la tarjeta no tiene margen */
+.tarjeta-boton p {
+  margin: 0;
+}
+
+/* Contenedor que agrupa las tarjetas del panel admin */
+.tarjetas-contenedor {
+  display: flex;
+  justify-content: center;                 /* Centrado horizontal */
+  gap: 30px;                               /* Separación entre tarjetas */
+  margin: 30px 0;                          /* Margen vertical */
+}
+
+/* Animación de aparición suave */
+.tarjeta-contenido {
+  animation: aparecer 0.25s ease;
+}
+
+/* Keyframes para animación de entrada */
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Botón fijo para cerrar sesión */
+.cerrar-sesion {
+  position: fixed;                         /* Siempre visible */
+  bottom: 20px;
+  right: 20px;
+
+  padding: 10px 18px;
+  font-size: 16px;
+  font-weight: bold;
+
+  background: #eee;                        /* Fondo gris claro */
+  border: 2px solid #ccc;                  /* Borde gris */
+  border-radius: 8px;                      /* Esquinas redondeadas */
+  cursor: pointer;
+  z-index: 1000;                           /* Encima de todo */
+
+  color: #333;                             /* Texto oscuro y legible */
+}
+
+/* Contenedores de acciones (platos, categorías, menú) */
+.acciones-platos,
+.acciones-categorias,
+.acciones-menu {
+  display: flex;
+  justify-content: center;                 /* Centrado */
+  gap: 20px;                               /* Separación entre botones */
+  margin-top: 20px;
+}
+
+/* Botones rectangulares más pequeños para acciones */
+.accion-boton {
+  background: #ffffff;                     /* Fondo blanco */
+  padding: 15px 20px;                      /* Espaciado interno */
+  border-radius: 10px;                     /* Esquinas redondeadas */
+  font-size: 18px;                         /* Tamaño del texto */
+  font-weight: bold;                       /* Texto destacado */
+  cursor: pointer;
+  border: 2px solid #ccc;                  /* Borde gris claro */
+  transition: 0.2s ease;                   /* Animación suave */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);  /* Sombra suave */
+
+  width: 120px;                            /* Más ancho */
+  height: 40px;                            /* Más bajo */
+  display: flex;
+  flex-direction: row;                     /* Icono a la izquierda, texto a la derecha */
+  align-items: center;
+  justify-content: center;
+  gap: 12px;                               /* Separación icono-texto */
+}
+
+/* Hover del botón de acción */
+.accion-boton:hover {
+  background: #f5f5f5;                     /* Fondo gris claro */
+  transform: scale(1.03);                  /* Ligero zoom */
+}
+
+/* Texto dentro del botón de acción */
+.accion-boton p {
+  margin: 0;
+  font-size: 18px;
+}
+
+
+
+
+

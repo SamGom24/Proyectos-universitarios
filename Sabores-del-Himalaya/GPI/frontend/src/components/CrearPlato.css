@@ -1,0 +1,104 @@
+/* Contenedor principal del formulario para crear un plato */
+.form-plato-contenedor {
+  background: #fff;                     /* Fondo blanco tipo tarjeta */
+  padding: 25px;                        /* Espaciado interno */
+  border-radius: 12px;                  /* Esquinas redondeadas */
+  width: 350px;                         /* Ancho fijo */
+  margin: 20px auto;                    /* Centrado horizontal + margen vertical */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave */
+  color: #111;                          /* Color de texto por defecto */
+}
+
+/* Título del formulario con separación garantizada */
+.form-plato-contenedor h3 {
+  margin: 0 0 25px 0 !important;        /* Separación inferior fija */
+  font-size: 22px;                      /* Tamaño del título */
+  font-weight: bold;                    /* Negrita */
+  color: #111;                          /* Color del texto */
+}
+
+/* Contenedor del formulario con disposición vertical */
+.form-plato {
+  display: flex;                        /* Activa flexbox */
+  flex-direction: column;               /* Coloca los elementos en columna */
+  gap: 14px;                            /* Espacio entre campos */
+}
+
+/* Estilo de las etiquetas */
+.form-plato label {
+  font-weight: bold;                    /* Negrita */
+  color: #111;                          /* Color del texto */
+}
+
+/* Estilo común para inputs y textarea */
+.form-plato input,
+.form-plato textarea {
+  padding: 10px;                        /* Espaciado interno */
+  border: 2px solid #ccc;               /* Borde gris claro */
+  border-radius: 8px;                   /* Esquinas redondeadas */
+  font-size: 16px;                      /* Tamaño de texto */
+  background: #fff;                     /* Fondo blanco */
+  color: #222;                          /* Color del texto */
+}
+
+/* Ajustes específicos del textarea */
+textarea {
+  resize: none;                         /* Evita que el usuario cambie el tamaño */
+  height: 80px;                         /* Altura fija */
+}
+
+/* Contenedor del selector de categoría */
+.categoria-selector {
+  position: relative;                   /* Necesario para posicionar la lista desplegable */
+}
+
+/* Input que actúa como selector visual */
+.categoria-input {
+  padding: 10px;                        /* Espaciado interno */
+  border: 2px solid #ccc;               /* Borde gris claro */
+  border-radius: 8px;                   /* Esquinas redondeadas */
+  cursor: pointer;                      /* Indica que es interactivo */
+  background: #fff;                     /* Fondo blanco */
+  color: #222;                          /* Texto */
+}
+
+/* Lista desplegable de categorías */
+.categoria-lista {
+  position: absolute;                   /* Se posiciona respecto al contenedor */
+  top: 45px;                            /* Justo debajo del input */
+  left: 0;
+  width: 100%;                          /* Ocupa todo el ancho del selector */
+  background: white;                    /* Fondo blanco */
+  border: 2px solid #ccc;               /* Borde igual al input */
+  border-radius: 8px;                   /* Esquinas redondeadas */
+  z-index: 10;                          /* Se asegura de aparecer encima */
+}
+
+/* Elemento individual de la lista de categorías */
+.categoria-item {
+  padding: 10px;                        /* Espaciado interno */
+  cursor: pointer;                      /* Interactivo */
+  color: #222;                          /* Color del texto */
+}
+
+/* Hover sobre cada categoría */
+.categoria-item:hover {
+  background: #f0f0f0;                  /* Fondo gris claro al pasar el ratón */
+}
+
+/* Botón de guardar */
+.guardar-btn {
+  margin-top: 10px;                     /* Separación respecto al campo anterior */
+  padding: 10px;                        /* Espaciado interno */
+  background: #4caf50;                  /* Verde de acción positiva */
+  color: white;                         /* Texto blanco */
+  border: none;                         /* Sin borde */
+  border-radius: 8px;                   /* Esquinas redondeadas */
+  cursor: pointer;                      /* Cursor de mano */
+  font-size: 16px;                      /* Tamaño del texto */
+}
+
+/* Hover del botón */
+.guardar-btn:hover {
+  background: #45a049;                  /* Verde más oscuro al pasar el ratón */
+}

@@ -1,0 +1,72 @@
+/* Contenedor principal de la lista de platos */
+.lista-platos {
+  display: grid;                                      /* Distribución en cuadrícula */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /* Columnas flexibles que se adaptan al ancho disponible */
+  gap: 20px;                                          /* Separación entre tarjetas */
+  padding: 20px;                                      /* Espaciado interno */
+}
+
+/* Tarjeta individual de cada plato */
+.plato-card {
+  background: #fff;                                   /* Fondo blanco tipo tarjeta */
+  padding: 20px;                                      /* Espaciado interno */
+  border-radius: 12px;                                /* Esquinas redondeadas */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);             /* Sombra suave */
+}
+
+/* Título del plato */
+.plato-card h3 {
+  margin-top: 0;                                      /* Elimina margen superior */
+}
+
+/* Botón para modificar un plato */
+.modificar-btn {
+  margin-top: 10px;                                   /* Separación respecto al contenido */
+  padding: 10px;                                      /* Espaciado interno */
+  background: #2196f3;                                /* Azul de acción */
+  color: white;                                       /* Texto blanco */
+  border: none;                                       /* Sin borde */
+  border-radius: 8px;                                 /* Esquinas redondeadas */
+  cursor: pointer;                                    /* Cursor de mano */
+}
+
+/* Hover del botón modificar */
+.modificar-btn:hover {
+  background: #1976d2;                                /* Azul más oscuro al pasar el ratón */
+}
+
+/* Botón para borrar un plato */
+.borrar-btn {
+  margin-top: 10px;                                   /* Separación respecto al contenido */
+  padding: 10px;                                      /* Espaciado interno */
+  background: #e53935;                                /* Rojo de acción destructiva */
+  color: white;                                       /* Texto blanco */
+  border: none;                                       /* Sin borde */
+  border-radius: 8px;                                 /* Esquinas redondeadas */
+  cursor: pointer;                                    /* Cursor de mano */
+}
+
+/* Hover del botón borrar */
+.borrar-btn:hover {
+  background: #c62828;                                /* Rojo más oscuro al pasar el ratón */
+}
+
+.plato-info-horizontal {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.plato-imagen {
+  width: 110px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  flex-shrink: 0;
+}
+
+.plato-texto {
+  flex: 1;
+}

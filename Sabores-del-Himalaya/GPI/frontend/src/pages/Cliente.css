@@ -1,0 +1,237 @@
+.cliente-contenedor {
+  padding: 30px;
+  text-align: left;
+}
+
+.cliente-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cliente-acciones-superiores {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.cliente-acciones-superiores button,
+.plato-card button,
+.resumen-pedido button,
+.boton-volver {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #e9e9e9;
+  color: #222;
+}
+
+.cliente-seccion {
+  margin-top: 25px;
+}
+
+.menu-diario-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.menu-bloques {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.menu-bloque {
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.categorias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.categoria-card {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.categoria-card:hover {
+  transform: translateY(-2px);
+  background: #f7f7f7;
+}
+
+.categoria-card.activa {
+  border-color: #999;
+  background: #efefef;
+}
+
+.texto-ayuda {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.filtros-cliente {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filtros-cliente select,
+.filtros-cliente input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.platos-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.plato-card {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.plato-card.seleccionado {
+  border: 2px solid #555;
+}
+
+.plato-card.deshabilitado {
+  opacity: 0.6;
+}
+
+.resumen-pedido {
+  margin-top: 28px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 20px;
+}
+.plato-info-horizontal {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.plato-imagen {
+  width: 150px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.plato-texto {
+  flex: 1;
+}
+
+.resumen-pedido ul {
+  padding-left: 20px;
+}
+.item-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.item-carrito button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.carrito-boton {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+
+  padding: 10px 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+.carrito-boton.activo {
+  background: #222;
+  color: white;
+}
+.cliente-acciones-superiores button:hover {
+  background: #ddd;
+}
+.menu-bloque select,
+.formulario-pago input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.boton-principal,
+.formulario-pago button {
+  margin-top: 18px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #222;
+  color: white;
+}
+
+.formulario-pago {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.mensaje-error {
+  margin-top: 12px;
+  color: #b00020;
+  font-weight: bold;
+}
+.control-cantidad {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.control-cantidad button {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}

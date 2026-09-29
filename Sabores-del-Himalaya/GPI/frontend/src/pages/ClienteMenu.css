@@ -1,0 +1,21 @@
+/* Iconos dentro de las tarjetas */
+.cliente-menu-icono {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+/* Botón volver */
+.cliente-menu-volver {
+  margin-top: 30px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+}
+
+.cliente-menu-volver:hover {
+  background: #ccc;
+}

@@ -1,0 +1,248 @@
+/* Estilo del contador (probablemente del template inicial de Vite) */
+.counter {
+  font-size: 16px;                     /* Tamaño del texto */
+  padding: 5px 10px;                   /* Espaciado interno */
+  border-radius: 5px;                  /* Esquinas redondeadas */
+  color: var(--accent);                /* Color del texto desde variables */
+  background: var(--accent-bg);        /* Fondo desde variables */
+  border: 2px solid transparent;       /* Borde invisible por defecto */
+  transition: border-color 0.3s;       /* Animación suave al hacer hover */
+  margin-bottom: 24px;                 /* Separación inferior */
+
+  &:hover {
+    border-color: var(--accent-border); /* Borde visible al pasar el ratón */
+  }
+  &:focus-visible {
+    outline: 2px solid var(--accent);   /* Contorno accesible */
+    outline-offset: 2px;
+  }
+}
+
+/* Contenedor de logos animados del template */
+.hero {
+  position: relative;                  /* Necesario para posicionar elementos hijos */
+
+  .base,
+  .framework,
+  .vite {
+    inset-inline: 0;                   /* Centrado horizontal */
+    margin: 0 auto;
+  }
+
+  .base {
+    width: 170px;                      /* Tamaño del logo base */
+    position: relative;
+    z-index: 0;                        /* Detrás del resto */
+  }
+
+  .framework,
+  .vite {
+    position: absolute;                /* Posicionamiento libre */
+  }
+
+  .framework {
+    z-index: 1;                        /* Encima del logo base */
+    top: 34px;
+    height: 28px;
+    transform: perspective(2000px)
+      rotateZ(300deg)
+      rotateX(44deg)
+      rotateY(39deg)
+      scale(1.4);                      /* Transformación 3D */
+  }
+
+  .vite {
+    z-index: 0;
+    top: 107px;
+    height: 26px;
+    width: auto;
+    transform: perspective(2000px)
+      rotateZ(300deg)
+      rotateX(40deg)
+      rotateY(39deg)
+      scale(0.8);                      /* Transformación 3D más pequeña */
+  }
+}
+
+/* Contenedor central del layout */
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;                           /* Separación entre elementos */
+  place-content: center;               /* Centrado vertical */
+  place-items: center;                 /* Centrado horizontal */
+  flex-grow: 1;                        /* Ocupa el espacio disponible */
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px 24px;           /* Ajuste para pantallas pequeñas */
+    gap: 18px;
+  }
+}
+
+/* Sección inferior del template */
+#next-steps {
+  display: flex;
+  border-top: 1px solid var(--border); /* Línea superior */
+  text-align: left;
+
+  & > div {
+    flex: 1 1 0;                       /* Cada bloque ocupa el mismo espacio */
+    padding: 32px;
+
+    @media (max-width: 1024px) {
+      padding: 24px 20px;
+    }
+  }
+
+  .icon {
+    margin-bottom: 16px;
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;            /* Se apilan en móvil */
+    text-align: center;
+  }
+}
+
+/* Columna izquierda del bloque next-steps */
+#docs {
+  border-right: 1px solid var(--border); /* Línea divisoria */
+
+  @media (max-width: 1024px) {
+    border-right: none;
+    border-bottom: 1px solid var(--border); /* Línea inferior en móvil */
+  }
+}
+
+/* Lista de enlaces del bloque next-steps */
+#next-steps ul {
+  list-style: none;                    /* Sin viñetas */
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  margin: 32px 0 0;
+
+  .logo {
+    height: 18px;
+  }
+
+  a {
+    color: var(--text-h);              /* Color del texto */
+    font-size: 16px;
+    border-radius: 6px;
+    background: var(--social-bg);      /* Fondo suave */
+    display: flex;
+    padding: 6px 12px;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: var(--shadow);       /* Sombra al pasar el ratón */
+    }
+
+    .button-icon {
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    margin-top: 20px;
+    flex-wrap: wrap;                   /* Se adaptan al ancho */
+    justify-content: center;
+
+    li {
+      flex: 1 1 calc(50% - 8px);       /* Dos por fila */
+    }
+
+    a {
+      width: 100%;                     /* Enlaces ocupan todo el ancho */
+      justify-content: center;
+      box-sizing: border-box;
+    }
+  }
+}
+
+/* Separador inferior */
+#spacer {
+  height: 88px;
+  border-top: 1px solid var(--border);
+
+  @media (max-width: 1024px) {
+    height: 48px;
+  }
+}
+
+/* Líneas decorativas laterales */
+.ticks {
+  position: relative;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -4.5px;
+    border: 5px solid transparent;
+  }
+
+  &::before {
+    left: 0;
+    border-left-color: var(--border);  /* Triángulo izquierdo */
+  }
+  &::after {
+    right: 0;
+    border-right-color: var(--border); /* Triángulo derecho */
+  }
+}
+
+/* Contenedor general de la app */
+.app-contenedor {
+  text-align: center;
+  padding: 40px;
+}
+
+/* Contenedor del login */
+.login-contenedor {
+  margin-top: 30px;
+}
+
+/* Formulario de login */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;                           /* Separación entre campos */
+  width: 250px;
+  margin: 0 auto;                      /* Centrado */
+}
+
+/* Inputs del login */
+.login-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+}
+
+/* Botón del login */
+.login-form button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #ddd;                    /* Fondo gris claro */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;                         /* Texto oscuro y legible */
+}
+
+/* Hover del botón */
+.login-form button:hover {
+  background: #ccc;                    /* Gris más oscuro al pasar el ratón */
+}
+
+
